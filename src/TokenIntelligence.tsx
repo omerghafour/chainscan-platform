@@ -1,5 +1,5 @@
 import {useEffect,useState,type FormEvent} from 'react';
-import {Activity,ArrowRight,ArrowUpRight,BarChart3,CheckCircle2,ExternalLink,FileText,Info,LoaderCircle,MessageCircle,Search,ShieldAlert,Sparkles,TrendingDown,TrendingUp} from 'lucide-react';
+import {Activity,ArrowRight,ArrowUpRight,BarChart3,CheckCircle2,ExternalLink,FileText,Info,LoaderCircle,MessageCircle,Search,ShieldAlert,Sparkles,TrendingUp} from 'lucide-react';
 type Pair={chainId:string;dexId:string;url:string;pairAddress:string;baseToken:{address:string;name:string;symbol:string};quoteToken:{address:string;name:string;symbol:string};priceUsd?:string;priceChange?:Record<string,number>;volume?:Record<string,number>;liquidity?:{usd?:number};marketCap?:number;txns?:Record<string,{buys:number;sells:number}>};
 type Token={name?:string;symbol?:string;holders_count?:string;decimals?:string};
 type Article={title:string;url:string;source:string;published:string;type:'news'|'social';score:'positive'|'negative'|'neutral'};
